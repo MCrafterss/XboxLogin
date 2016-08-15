@@ -1,0 +1,5 @@
+name: XboxLogin
+version: 1.0.0
+author: xZeroMCPE
+api: [1.0.0, 2.0.0]
+main: Andre\XboxLogin\Main
