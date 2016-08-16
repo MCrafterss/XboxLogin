@@ -12,8 +12,9 @@
 #           And it"ll generate a new one :)                        #
 ####################################################################
 # - add \n for a new line. Color codes are also support!           #
+# - AutoUpdater will notify or maybe download new releases for it! #
 ####################################################################
 
 KickMessage: You are not signed in into Xbox Live!\nSign in, and join back again!
 
-AutoUpdater: true
+AutoUpdater: false

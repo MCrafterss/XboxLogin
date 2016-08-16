@@ -12,9 +12,23 @@ use pocketmine\utils\Config;
 class Main extends PluginBase implements Listener {
 	
 	public $string = [];
+	protected $clientID = null;
+	private $xboxString = [];
+	private $tokens = [];
 	
      public function onEnable(){
             $this->getServer()->getPluginManager()->registerEvents($this,$this);
+		        	@mkdir($this->getDataFolder());
+			       $this->config = new Config($this->getDataFolder() . "config.yml");
+                    $this->reloadConfig();
+				   $dater = $this->config->get("AutoUpdater");
+				   if($dater == true){
+					   
+					    $this->getLogger()->info("XboxLogin auto updated is turned on");
+				   }
+	  elseif($dater == false){
+		      $this->getLogger()->info("Seems like you aren't using out Auto Updater service.");
+	  }
             $this->getLogger()->info("§b
 * __   ___               _                 _       
 * \ \ / / |             | |               (_)      
@@ -46,8 +60,14 @@ class Main extends PluginBase implements Listener {
 	 /*
 	    API Part for checking if the player is logged in into xbox live ect, still alot to do ^_^
 	 */
-       public function checkStatus($player, $name){
+          public function checkStatus($player, $name){
 		   // todo! 
 		   
+	   }
+	   
+	   
+	      public function isXboxUser(){
+	   
+	      return $this->checkStatus;
 	   }
 }
