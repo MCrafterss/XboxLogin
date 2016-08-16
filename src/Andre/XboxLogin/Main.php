@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener {
 					    $this->getLogger()->info("MCrafters+ connection established!");
 				   }
 	  elseif($dater == false){
-		      $this->getLogger()->info("It looks like you aren't using MCrafters+, an auto updater for our plugins. We recommend that you do so your plugins won't become incompatible.);
+		      $this->getLogger()->info("It looks like you aren't using MCrafters+, an auto updater for our plugins. We recommend that you do so your plugins won't become incompatible.");
 	  }
             $this->getLogger()->info("§b
 * __   ___               _                 _       
