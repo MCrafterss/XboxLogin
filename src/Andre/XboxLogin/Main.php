@@ -48,15 +48,7 @@ class Main extends PluginBase implements Listener {
 		 $name = $player->getName();
 		 $this->checkStatus($player, $name);
 	 }
-	 
-	 /*
-	    Allows, players with invalid name to join. Or with spaces (ect)
-	 */
-	      public function onKick(PlayerKickEvent $event){
-             if($event->getReason() === "disconnectionScreen.invalidName"){
-				 $event->setCancelled(true);
-			 }
-		  }
+
 	 /*
 	    API Part for checking if the player is logged in into xbox live ect, still alot to do ^_^
 	 */
