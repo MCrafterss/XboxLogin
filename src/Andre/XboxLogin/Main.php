@@ -24,10 +24,10 @@ class Main extends PluginBase implements Listener {
 				   $dater = $this->config->get("AutoUpdater");
 				   if($dater == true){
 					   
-					    $this->getLogger()->info("XboxLogin auto updated is turned on");
+					    $this->getLogger()->info("MCrafters+ connection established!");
 				   }
 	  elseif($dater == false){
-		      $this->getLogger()->info("Seems like you aren't using out Auto Updater service.");
+		      $this->getLogger()->info("It looks like you aren't using MCrafters+, an auto updater for our plugins. We recommend that you do so your plugins won't become incompatible.);
 	  }
             $this->getLogger()->info("§b
 * __   ___               _                 _       
