@@ -9,3 +9,5 @@ Allowing xbox players, will break alot of things, such as names will contain "sp
 # Status
 
 Still building, we"ll let you know when theres a beta-release!
+
+~ I don't think this is needed no more, since Genisys already have it working :) 
